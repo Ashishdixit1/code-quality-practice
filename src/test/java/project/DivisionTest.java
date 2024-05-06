@@ -1,14 +1,16 @@
 package project;
 
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class DivisionTest {
+    @Autowired
+    ArithmaticOperation a;
     @Test
     public void division(){
-        ArithmaticOperation arithmaticOperation =new ArithmaticOperation();
-        Integer actual =  arithmaticOperation.division(50, 10);
+        Integer actual =  a.division(50, 10);
         Integer expected =5;
         assertEquals(actual,expected);
     }
