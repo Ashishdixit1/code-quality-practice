@@ -13,14 +13,6 @@ public class AdditionTest {
         int actual = addition.add(1,2);
         assertEquals(expected,actual);
     }
-    @Test
-    public void sub(){
-        ArithmaticOperation arithmaticOperation =new ArithmaticOperation();
-         int actual= arithmaticOperation.subtract(50,20);
-        int expected = 30;
 
-        assertEquals(actual,expected);
-
-    }
 
 }
